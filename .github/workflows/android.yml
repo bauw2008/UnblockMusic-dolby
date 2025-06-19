@@ -35,10 +35,8 @@ jobs:
             -x ".git/*" \
             -x ".github/*" \
             -x ".vscode/*" \
-            -x ".yarn/*" \
-            -x "*.gitignore" \
-            -x "*.editorconfig" && \
-          cd ..
+            -x ".yarn/*" && \
+          cd .. && \
           
           # 3. Clean old and move new
           rm -f ./app/src/main/assets/UnblockNeteaseMusic.zip && \
